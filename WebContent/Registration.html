@@ -1,0 +1,126 @@
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+#formpage
+{
+text-align: center;
+padding-top: 5%;
+}
+#legend{
+	padding-bottom: 5%;
+}
+
+.container{
+    margin-top:20px;
+}
+.image-preview-input {
+    position: relative;
+    overflow: hidden;
+	margin: 0px;    
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;    
+}
+.image-preview-input input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.image-preview-input-title {
+    margin-left:2px;
+}
+</style>
+</head>
+<body>
+
+<form class="form-horizontal" id="formpage" action="RegisterUser" enctype="multipart/form-data" method="POST">
+  <fieldset>
+    <div id="legend" >
+      <h2>Registration Page</h2>
+    </div>
+    <table>
+    <div class="control-group">
+      
+      <div class="controls">
+      
+      <label class="control-label"  for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="" class="input-xlarge">
+        
+      </div>
+     
+    </div>
+    <div class="control-group">
+      
+      <div class="controls">
+      
+      <label class="control-label"  for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="" class="input-xlarge">
+        
+      </div>
+     
+    </div>
+ 
+    <div class="control-group">
+      <!-- E-mail -->
+      
+      <div class="controls">
+      <label class="control-label" for="email">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Password-->
+      
+      <div class="controls">
+      <label class="control-label" for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+      </div>
+    </div>
+ 
+    <div class="control-group">
+      <!-- Password -->
+      
+      <div class="controls">
+      <label class="control-label"  for="password_confirm">Password (Confirm)</label>
+        <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
+      </div>
+    </div>
+    
+    <div class="control-group">
+      
+      <div class="controls">
+      <label class="control-label"  for="file"></label>
+        <input type="file" id="image" name="image" placeholder="Choose Profile picture">
+      </div>
+    </div>
+    
+ <br>
+    <div class="control-group">
+      <!-- Button -->
+      <div class="controls">
+        <button class="btn btn-success">Register</button>
+      </div>
+    </div>
+    </table>
+  </fieldset>
+  
+  
+</form>
+
+</body>
+</html>
